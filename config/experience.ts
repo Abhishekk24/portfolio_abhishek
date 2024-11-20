@@ -53,11 +53,12 @@ export const Experiences: ExperienceInterface[] = [
                 description: "",
                 mediaArr: [
                     {type: "image" , url : "/experience/rakshanetra/u1.jpeg"},
-                    // "/experience/rakshanetra/u2.jpeg",
-                    // "/experience/rakshanetra/u3.jpeg",
-                    // "/experience/rakshanetra/u4.jpeg",
-                    // "/experience/rakshanetra/u5.jpeg",
-                    // "/experience/rakshanetra/u6.jpeg",
+                    {type: "image" , url : "/experience/rakshanetra/u2.jpeg"},
+                    {type: "image" , url : "/experience/rakshanetra/u3.jpeg"},
+                    {type: "image" , url : "/experience/rakshanetra/u4.jpeg"},
+                    {type: "image" , url : "/experience/rakshanetra/u5.jpeg"},
+                    {type: "image" , url : "/experience/rakshanetra/u6.jpeg"},
+                    
                 ],
             },
            
@@ -65,10 +66,10 @@ export const Experiences: ExperienceInterface[] = [
                 title: "Admin Dashboard",
                 description: "Realtime dashboard with user location, current situations graphs and feedback form.",
                 mediaArr: [
-                    {type: "image" , url : "/experience/rakshanetra/u1.jpeg"},
-                    // "/experience/rakshanetra/a1.jpeg",
-                    // "/experience/rakshanetra/a2.jpeg",
-                    // "/experience/rakshanetra/a3.jpeg",
+                    {type: "image" , url : "/experience/rakshanetra/a1.jpeg"},
+                    {type: "image" , url : "/experience/rakshanetra/a2.jpeg"},
+                    {type: "image" , url : "/experience/rakshanetra/a3.jpeg"},
+                    
                     ],
             },
         ],
@@ -105,11 +106,13 @@ export const Experiences: ExperienceInterface[] = [
                 title: "Warehouse Connet",
                 description: "Live Warehouse Status - Online Payment - Logistics",
                 mediaArr: [
-                    // "/experience/warehouse/18.png",
-                    // "/experience/warehouse/19.png",
-                    // "/experience/warehouse/20.png",
-                    // "/experience/warehouse/21.png",
-                    // "/experience/warehouse/22.png",
+                    {type: "image" , url : "/experience/warehouse/18.png"},
+                    {type: "image" , url : "/experience/warehouse/19.png"},
+                    {type: "image" , url : "/experience/warehouse/20.png"},
+                    {type: "image" , url : "/experience/warehouse/21.png"},
+                    {type: "image" , url : "/experience/warehouse/22.png"},
+                    
+                    
                 ],
             },
            
