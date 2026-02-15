@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 
 import { contributionsInterface } from "@/config/contributions";
 import { Icons } from "./icons";
+import TiltEffect from "@/components/tilt-effect";
 
 interface ContributionCardProps {
     contributions: contributionsInterface[];
@@ -12,34 +15,40 @@ export default function ContributionCard({
     contributions,
 }: ContributionCardProps) {
     return (
-        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] lg:grid-cols-3 static">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {contributions.map((contribution, id) => (
-                <Link href={contribution.link} target="_blank" key={id}>
-                    <div className="relative rounded-lg border bg-background p-2 hover:bg-accent hover:text-accent-foreground">
-                        <Icons.externalLink
-                            size={35}
-                            className="absolute bottom-3 right-3 border bg-background rounded-full p-2 cursor-pointer text-muted-foreground "
-                        />
-                        <div className="flex h-[170px] flex-col justify-between rounded-md p-6 sm:h-[170px]">
-                            <div className="flex flex-row justify-between">
-                                <h3 className="font-bold flex space-x-2 items-center">
-                                    <Icons.gitRepoIcon size={20} />
-                                    <span>{contribution.repo}</span>
-                                </h3>
-                                <Icons.gitBranch size={20} />
-                            </div>
-                            <div className="space-y-4">
-                                <p className="text-sm text-muted-foreground">
+                <TiltEffect key={id} intensity={8}>
+                    <Link
+                        href={contribution.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block h-full"
+                    >
+                        <div className="relative h-full min-h-[200px] rounded-md border border-border bg-card p-5 hover:bg-accent/50 hover:border-primary/30 transition-all duration-300 hover:shadow-md flex flex-col">
+                            <Icons.externalLink
+                                size={20}
+                                className="absolute top-4 right-4 text-muted-foreground opacity-70"
+                                aria-hidden
+                            />
+                            <div className="flex flex-1 flex-col gap-4 pr-8">
+                                <div className="flex items-start justify-between gap-2">
+                                    <h3 className="font-semibold text-foreground line-clamp-2 flex items-center gap-2 min-w-0">
+                                        <Icons.gitRepoIcon size={18} className="shrink-0 text-muted-foreground" />
+                                        <span className="truncate">{contribution.repo}</span>
+                                    </h3>
+                                    <Icons.gitBranch size={18} className="shrink-0 text-muted-foreground" />
+                                </div>
+                                <p className="text-sm text-muted-foreground line-clamp-3 flex-1">
                                     {contribution.contibutionDescription}
                                 </p>
-                                <p className="text-sm text-muted-foreground flex space-x-2 items-center">
-                                    <Icons.gitOrgBuilding size={15} />
-                                    <span>{contribution.repoOwner}</span>
+                                <p className="text-sm text-muted-foreground flex items-center gap-2 mt-auto">
+                                    <Icons.gitOrgBuilding size={15} className="shrink-0" />
+                                    <span className="truncate">{contribution.repoOwner}</span>
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
+                </TiltEffect>
             ))}
         </div>
     );

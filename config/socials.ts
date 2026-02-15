@@ -15,6 +15,12 @@ export const SocialLinks: SocialInterface[] = [
         link: "https://github.com/Abhishekk24",
     },
     {
+        name: "X (Twitter)",
+        username: "@ajxhash",
+        icon: Icons.twitter,
+        link: "https://x.com/ajxhash",
+    },
+    {
         name: "LinkedIn",
         username: "Abhishek Jadhav",
         icon: Icons.linkedin,

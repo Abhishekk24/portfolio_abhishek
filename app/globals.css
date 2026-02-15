@@ -4,74 +4,83 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    /* Crown of void – light mode: dark accents on light */
+    --background: 0 0% 98%;
+    --foreground: 240 10% 6%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 5% 92%;
+    --muted-foreground: 240 4% 40%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 240 10% 6%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 240 6% 88%;
+    --input: 240 6% 88%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card-foreground: 240 10% 6%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 30 40% 28%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 5% 92%;
+    --secondary-foreground: 240 10% 6%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 30 25% 92%;
+    --accent-foreground: 30 40% 20%;
 
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
 
-    --ring: 215 20.2% 65.1%;
+    --ring: 30 30% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
 
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
+
+    /* Crown of void accent – amber/gold */
+    --void-accent: 38 92% 50%;
+    --void-muted: 260 20% 14%;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    /* Crown of void – dark: deep void with amber accents */
+    --background: 240 10% 4%;
+    --foreground: 40 10% 96%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 240 8% 10%;
+    --muted-foreground: 40 5% 60%;
 
-    --accent: 216 34% 17%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 240 8% 12%;
+    --accent-foreground: 40 10% 96%;
 
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 40 10% 96%;
 
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
+    --border: 240 6% 16%;
+    --input: 240 6% 16%;
 
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
+    --card: 240 8% 8%;
+    --card-foreground: 40 10% 96%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
+    --primary: 38 92% 50%;
+    --primary-foreground: 240 10% 4%;
 
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 6% 14%;
+    --secondary-foreground: 40 10% 96%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 0 0% 98%;
 
-    --ring: 216 34% 17%;
+    --ring: 38 60% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
+
+    --void-accent: 38 92% 55%;
+    --void-muted: 260 15% 18%;
   }
 }
 
@@ -83,6 +92,13 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig"1, "calt"1;
+  }
+
+  /* Smooth cursor: show text cursor in form fields */
+  input,
+  textarea,
+  select {
+    cursor: text !important;
   }
 }
 
@@ -294,4 +310,18 @@
   100% {
     stroke-dashoffset: 0;
   }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }

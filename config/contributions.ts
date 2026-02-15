@@ -7,25 +7,46 @@ export interface contributionsInterface {
 
 export const contributionsUnsorted: contributionsInterface[] = [
     {
-        repo: "AOH_INNOVISON",
+        repo: "cyrene-web",
         contibutionDescription:
-            "Improved the UI component to showcase the platform and user friendly UX.",
-        repoOwner: "INNOVISION",
-        link: "https://github.com/NimbalkarSoham/AOH_INNOVISION/pull/3",
+            "Lead development of CyreneAI webapp — decentralized AI agent platform on Solana for interacting with AI agents.",
+        repoOwner: "CyreneAI",
+        link: "https://github.com/Abhishekk24/cyrene-web",
     },
     {
-        repo: "SUD-Stationary-Supply-Management",
+        repo: "Stories.fun",
         contibutionDescription:
-            "Added reCaptcha to enhance the security of application.",
-        repoOwner: "SUD",
-        link: "https://github.com/NimbalkarSoham/SUD-Stationary-Supply-Management/pull/60",
+            "Contributed to Web3 storytelling platform — building decentralized narrative experiences.",
+        repoOwner: "Stories.fun",
+        link: "https://stories.fun",
     },
     {
-        repo: "SUD-Stationary-Supply-Management",
+        repo: "BUGZER",
         contibutionDescription:
-            "Added 2FA for advanced secure application. ",
-        repoOwner: "SUD",
-        link: "https://github.com/NimbalkarSoham/SUD-Stationary-Supply-Management/pull/61",
+            "Developer tool to catch bugs before they catch you. TypeScript-based debugging and error tracking.",
+        repoOwner: "Abhishekk24",
+        link: "https://github.com/Abhishekk24/BUGZER",
+    },
+    {
+        repo: "food-supply-chain",
+        contibutionDescription:
+            "Web3-based food supply chain tracker — transparency and traceability for supply chain. Live on Vercel.",
+        repoOwner: "Abhishekk24",
+        link: "https://github.com/Abhishekk24/food-supply-chain",
+    },
+    {
+        repo: "sky_viewer",
+        contibutionDescription:
+            "Systems-level Rust project — low-level systems programming and performance-focused tooling.",
+        repoOwner: "Abhishekk24",
+        link: "https://github.com/Abhishekk24/sky_viewer",
+    },
+    {
+        repo: "Warehouse Connect",
+        contibutionDescription:
+            "Smart logistics to minimize food wastage — MiniProject with live deployment on Vercel.",
+        repoOwner: "Abhishekk24",
+        link: "https://github.com/Abhishekk24/MiniProject_Sem5",
     },
 ];
 

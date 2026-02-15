@@ -1,11 +1,8 @@
-import { Icons } from "@/components/icons";
-
-
 export interface skillsInterface {
     name: string;
     description: string;
     rating: number;
-    icon: any;
+    iconKey: string;
 }
 
 export const skillsUnsorted: skillsInterface[] = [
@@ -14,128 +11,126 @@ export const skillsUnsorted: skillsInterface[] = [
         description:
             "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
         rating: 5,
-        icon: Icons.nextjs,
+        iconKey: "nextjs",
     },
     {
         name: "React",
         description:
             "Craft interactive user interfaces using components, state, props, and virtual DOM.",
         rating: 5,
-        icon: Icons.react,
+        iconKey: "react",
     },
     {
         name: "Flask",
         description:
             "Develop lightweight and scalable web applications with Flask, a minimalist Python framework.",
         rating: 5,
-        icon: Icons.flask,
+        iconKey: "flask",
     },
-
     {
         name: "Firebase",
         description:
             "Power your apps with Firebase, a comprehensive platform for backend and real-time data solutions.",
         rating: 4,
-        icon: Icons.firebase,
+        iconKey: "firebase",
     },
     {
         name: "express.js",
         description:
             "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
         rating: 5,
-        icon: Icons.express,
+        iconKey: "express",
     },
     {
         name: "Node.js",
         description:
             "Run JavaScript on the server side, enabling dynamic and responsive applications.",
         rating: 5,
-        icon: Icons.nodejs,
+        iconKey: "nodejs",
     },
     {
         name: "MongoDB",
         description:
             "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
         rating: 5,
-        icon: Icons.mongodb,
+        iconKey: "mongodb",
     },
     {
         name: "Typescript",
         description:
             "Enhance JavaScript with static types, making code more understandable and reliable.",
         rating: 5,
-        icon: Icons.typescript,
+        iconKey: "typescript",
     },
     {
         name: "Javascript",
         description:
             "Create interactive and dynamic web experiences with the versatile scripting language.",
         rating: 5,
-        icon: Icons.javascript,
+        iconKey: "javascript",
     },
-
     {
         name: "TensorFlow",
         description:
             "Build and train machine learning models effortlessly with TensorFlow, a leading open-source framework.",
         rating: 4,
-        icon: Icons.tensorflow,
+        iconKey: "tensorflow",
     },
     {
         name: "OpenCV",
         description:
             "Empower your projects with OpenCV, a powerful library for computer vision and image processing.",
         rating: 4,
-        icon: Icons.opencv,
+        iconKey: "opencv",
     },
     {
         name: "Streamlit",
         description:
             "Quickly build interactive web apps for data and machine learning with Streamlit.",
         rating: 4,
-        icon: Icons.streamlit,
+        iconKey: "streamlit",
     },
     {
         name: "Tailwind CSS",
         description:
             "Design beautiful, modern websites faster with a utility-first CSS framework.",
         rating: 5,
-        icon: Icons.tailwindcss,
+        iconKey: "tailwindcss",
     },
     {
         name: "AWS",
         description:
             "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
         rating: 3,
-        icon: Icons.amazonaws,
+        iconKey: "amazonaws",
     },
     {
         name: "Bootstrap",
         description:
             "Quickly create responsive and appealing web designs using a popular CSS framework.",
         rating: 2,
-        icon: Icons.bootstrap,
+        iconKey: "bootstrap",
     },
     {
         name: "MySQL",
         description:
             "Manage and organize relational databases efficiently for data-driven applications.",
         rating: 2,
-        icon: Icons.mysql,
+        iconKey: "mysql",
     },
     {
         name: "Google CLoud",
         description:
             "Manage and organize relational databases efficiently for data-driven applications.",
         rating: 2,
-        icon: Icons.gcloud,
+        iconKey: "gcloud",
     },
     {
         name: "Vercel",
         description:
             "Manage and organize relational databases efficiently for data-driven applications.",
         rating: 4,
-        icon: Icons.vercel,
+        iconKey: "vercel",
     },
 ];
 

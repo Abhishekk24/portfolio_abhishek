@@ -19,7 +19,6 @@ export interface ExperienceInterface {
     shortDescription: string;
     websiteLink?: string;
     githubLink?: string;
-   
     techStack: ValidSkills[];
     startDate: Date;
     endDate: Date;
@@ -30,20 +29,214 @@ export interface ExperienceInterface {
 
 export const Experiences: ExperienceInterface[] = [
     {
+        id: "cyreneai",
+        companyName: "CyreneAI",
+        type: "Professional",
+        category: ["Full Stack", "Web3", "AI-ML"],
+        shortDescription:
+            "Lead Software Developer building decentralized AI agent infrastructure on Solana — working across DePIN, tokenization, and autonomous agent systems. CyreneAI webapp for interacting with AI agents.",
+        websiteLink: "https://cyreneai.com",
+        githubLink: "https://github.com/Abhishekk24/cyrene-web",
+        techStack: ["Next.js", "React", "Typescript", "Node.js", "Firebase"],
+        startDate: new Date("2024-06-01"),
+        endDate: new Date("2025-12-31"),
+        companyLogoImg: "/CyreneAI_logo_square.png",
+        pagesInfoArr: [
+            {
+                title: "CyreneAI",
+                description: "Decentralized AI agent platform on Solana",
+                mediaArr: [
+                    { type: "image", url: "/experience/vinrenterprises/vinr_1.png" },
+                    { type: "image", url: "/experience/vinrenterprises/vinr_2.png" },
+                ],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "Lead Software Developer at CyreneAI, building decentralized AI agent infrastructure on Solana. Working across DePIN, tokenization, and autonomous agent systems.",
+                "Building the CyreneAI webapp for interacting with AI agents — TypeScript, React, Next.js, and Solana.",
+            ],
+            bullets: [
+                "Decentralized AI agent platform on Solana",
+                "DePIN, tokenization, and autonomous agent systems",
+                "Webapp for interacting with AI agents",
+            ],
+        },
+    },
+    {
+        id: "star-union-dai-ichi",
+        companyName: "Star Union Dai-Ichi Life Insurance",
+        type: "Professional",
+        category: ["Full Stack", "AI-ML", "Web Dev"],
+        shortDescription:
+            "Lead SDE Intern — built AI-powered avatars and enterprise web solutions. Worked on full-stack applications and AI/ML integrations for insurance and internal tools.",
+        techStack: ["React", "Next.js", "Node.js", "Typescript", "MongoDB", "python"],
+        startDate: new Date("2023-06-01"),
+        endDate: new Date("2024-05-01"),
+        companyLogoImg: "/experience/rakshanetra/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Enterprise & AI Solutions",
+                description: "AI-powered avatars and web solutions",
+                mediaArr: [
+                    { type: "image", url: "/experience/rakshanetra/a1.jpeg" },
+                    { type: "image", url: "/experience/rakshanetra/a2.jpeg" },
+                ],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "Lead SDE Intern at Star Union Dai-Ichi Life Insurance. Built AI-powered avatars and enterprise web solutions, working on full-stack applications and AI/ML integrations.",
+            ],
+            bullets: [
+                "AI-powered avatars and enterprise web solutions",
+                "Full-stack development and internal tools",
+                "Collaboration with cross-functional teams",
+            ],
+        },
+    },
+    {
+        id: "stories-fun",
+        companyName: "Stories.fun",
+        type: "Professional",
+        category: ["Web3", "Full Stack", "Web Dev"],
+        shortDescription:
+            "Contributed to Stories.fun — a Web3 storytelling platform. Building decentralized narrative experiences and community-driven content.",
+        websiteLink: "https://stories.fun",
+        techStack: ["React", "Next.js", "Typescript", "Node.js"],
+        startDate: new Date("2024-01-01"),
+        endDate: new Date("2024-12-01"),
+        companyLogoImg: "/stories.png",
+        pagesInfoArr: [
+            {
+                title: "Stories.fun",
+                description: "Web3 storytelling platform",
+                mediaArr: [
+                    { type: "image", url: "/experience/warehouse/18.png" },
+                    { type: "image", url: "/experience/warehouse/19.png" },
+                ],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "Contributed to Stories.fun, a Web3 storytelling platform. Building decentralized narrative experiences and community-driven content.",
+            ],
+            bullets: [
+                "Web3 storytelling platform (contributor)",
+                "Decentralized narrative experiences",
+            ],
+        },
+    },
+    {
+        id: "Warehouse-Connect",
+        companyName: "Warehouse Connect",
+        type: "Personal Project",
+        category: ["Supply Chain Management ", "Logistics", "Full Stack"],
+        shortDescription:
+            "Smart logistics platform to minimize food wastage — connects organizations with available warehouse spaces. Real-time availability, map-based search, and analytics. Live on Vercel.",
+        websiteLink: "https://warehouse-connect.vercel.app",
+        githubLink: "https://github.com/Abhishekk24/MiniProject_Sem5",
+        techStack: ["Next.js", "Node.js", "express.js", "MongoDB", "Javascript"],
+        startDate: new Date("2023-09-10"),
+        endDate: new Date("2023-11-05"),
+        companyLogoImg: "/experience/warehouse/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Warehouse Connect",
+                description: "Live Warehouse Status · Online Payment · Logistics",
+                mediaArr: [
+                    { type: "image", url: "/experience/warehouse/18.png" },
+                    { type: "image", url: "/experience/warehouse/19.png" },
+                    { type: "image", url: "/experience/warehouse/20.png" },
+                    { type: "image", url: "/experience/warehouse/21.png" },
+                    { type: "image", url: "/experience/warehouse/22.png" },
+                ],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "Warehouse Connect is a web-based platform that addresses inefficiencies in the food supply chain by enabling effective sharing and utilization of vacant warehouse spaces. Connects food suppliers, government agencies, and warehouse owners to reduce food wastage.",
+            ],
+            bullets: [
+                "Real-time availability and warehouse listings",
+                "Map-based search and geolocation",
+                "Inventory management and analytics",
+                "Live at warehouse-connect.vercel.app",
+            ],
+        },
+    },
+    {
+        id: "BUGZER",
+        companyName: "BUGZER",
+        type: "Personal Project",
+        category: ["Full Stack", "Web Dev"],
+        shortDescription:
+            "Developer tool to catch bugs before they catch you. TypeScript-based debugging and error-tracking for earlier, reliable bug detection.",
+        githubLink: "https://github.com/Abhishekk24/BUGZER",
+        techStack: ["Typescript", "Next.js", "React", "Node.js"],
+        startDate: new Date("2024-08-01"),
+        endDate: new Date("2024-12-01"),
+        companyLogoImg: "/experience/graphai/logo.png",
+        pagesInfoArr: [
+            {
+                title: "BUGZER",
+                description: "Catch bugs before they catch you",
+                mediaArr: [{ type: "image", url: "/experience/graphai/logo.png" }],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "BUGZER is a developer tool built in TypeScript to catch bugs before they catch you — enabling earlier and more reliable bug detection in the development workflow.",
+            ],
+            bullets: [
+                "TypeScript-based debugging tool",
+                "Error tracking and early bug detection",
+            ],
+        },
+    },
+    {
+        id: "food-supply-chain",
+        companyName: "food-supply-chain",
+        type: "Personal Project",
+        category: ["Web3", "Full Stack", "Supply Chain Management "],
+        shortDescription:
+            "Web3-based food supply chain tracker for transparency and traceability. Live deployment on Vercel for end-to-end supply chain visibility.",
+        websiteLink: "https://food-supply-chain-gilt.vercel.app",
+        githubLink: "https://github.com/Abhishekk24/food-supply-chain",
+        techStack: ["Next.js", "React", "Typescript", "Node.js"],
+        startDate: new Date("2024-03-01"),
+        endDate: new Date("2024-06-01"),
+        companyLogoImg: "/experience/warehouse/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Food Supply Chain",
+                description: "Web3 supply chain tracker — Live on Vercel",
+                mediaArr: [
+                    { type: "image", url: "/experience/warehouse/20.png" },
+                    { type: "image", url: "/experience/warehouse/21.png" },
+                ],
+            },
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "Web3-based food supply chain tracker bringing transparency and traceability to supply chains. Live at food-supply-chain-gilt.vercel.app.",
+            ],
+            bullets: [
+                "Web3 transparency and traceability",
+                "End-to-end supply chain visibility",
+                "Live on Vercel",
+            ],
+        },
+    },
+    {
         id: "RakshaNetra",
         companyName: "RakshaNetra",
-        type: "Professional",
+        type: "Personal Project",
         category: ["IOT", "Full Stack", "AI-ML"],
         shortDescription:
-            "RakshaNetra is an IoT-based accident detection and alert system designed to address emergencies like fires, gas leaks, and road accidents. It integrates advanced sensors and machine learning to ensure real-time detection, predictive analysis, and automated alerts for quick response. The system enhances safety while being scalable and reliable in diverse environments.",
-              websiteLink: "https://rakshanetra.in",
-        techStack: [
-            "React",
-            "MongoDB",
-            "Firebase",
-            "clerk",
-            "Flask",
-        ],
+            "IoT-based accident detection and alert system for fires, gas leaks, and road accidents. Integrates sensors and ML for real-time detection and automated alerts.",
+        websiteLink: "https://rakshanetra.in",
+        techStack: ["React", "MongoDB", "Firebase", "clerk", "Flask", "python"],
         startDate: new Date("2024-02-01"),
         endDate: new Date("2024-10-15"),
         companyLogoImg: "/experience/rakshanetra/logo.png",
@@ -52,124 +245,28 @@ export const Experiences: ExperienceInterface[] = [
                 title: "User Page",
                 description: "",
                 mediaArr: [
-                    {type: "image" , url : "/experience/rakshanetra/u1.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/u2.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/u3.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/u4.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/u5.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/u6.jpeg"},
-                    
+                    { type: "image", url: "/experience/rakshanetra/u1.jpeg" },
+                    { type: "image", url: "/experience/rakshanetra/u2.jpeg" },
+                    { type: "image", url: "/experience/rakshanetra/u3.jpeg" },
                 ],
             },
-           
             {
                 title: "Admin Dashboard",
-                description: "Realtime dashboard with user location, current situations graphs and feedback form.",
+                description: "Realtime dashboard with user location and feedback.",
                 mediaArr: [
-                    {type: "image" , url : "/experience/rakshanetra/a1.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/a2.jpeg"},
-                    {type: "image" , url : "/experience/rakshanetra/a3.jpeg"},
-                    
-                    ],
-            },
-        ],
-        descriptionDetails: {
-            paragraphs: [
-                "RakshaNetra: IoT-Based Accident Detection, Prevention, and Alert System",
-                "RakshaNetra is an advanced IoT-based system designed to detect, prevent, and respond to critical emergencies such as fires, gas leaks, and road accidents. The system integrates multiple sensors, including the DS18B20 temperature sensor for fire detection, the MQ2 gas sensor for smoke and gas leaks, and the MPU6050 accelerometer for accident impact detection. These sensors continuously monitor environmental parameters, providing real-time data to the ESP32 microcontroller, which processes the information and triggers alerts when thresholds are exceeded.",
-                "The core of RakshaNetra's efficiency lies in its use of machine learning algorithms, such as Random Forest Regressor and Linear Regression, to analyze sensor data for anomaly detection and predictive maintenance. This enables the system to forecast potential hazards and alert users before emergencies escalate. In areas with limited internet connectivity, the ESP32 ensures seamless communication between components, maintaining system reliability.",
-                "Key features of RakshaNetra include:"],
-            bullets: [
-                "Real-Time Detection and Alerts: Immediate detection of fires, gas leaks, or accidents, with automated alerts sent to emergency responders and authorities via email or other communication channels.",
-                "Predictive Maintenance: Machine learning-powered analysis of sensor data to predict potential system failures and anomalies.",
-                "Remote Monitoring: Cloud-based storage and visualization of real-time sensor data, accessible via a user-friendly web interface.",
-                "Versatility and Scalability: Suitable for homes, offices, industrial facilities, and public spaces, with the ability to integrate into existing emergency frameworks.",
-                "Robust Communication: Operates efficiently in remote areas with poor internet connectivity, ensuring uninterrupted safety monitoring."
-            ],
-        },
-    },
-    {
-        id: "Warehouse-Connect",
-        companyName: "Warehouse Connect",
-        type: "Personal Project",
-        category: ["Supply Chain Management ", "Logistics"],
-        shortDescription:
-            "Warehouse Connect is an online platform that optimizes food supply chain management by connecting organizations with available warehouse spaces to minimize food wastage. It features real-time availability, advanced search algorithms, and integration with regulatory authorities for seamless storage solutions",
-             websiteLink:
-            "https://warehouse-connectt.vercel.app/",
-        techStack: ["Next.js", "Node.js","express.js", "MongoDB", "Javascript"],
-        startDate: new Date("2023-09-10"),
-        endDate: new Date("2023-11-05"),
-        companyLogoImg: "/experience/warehouse/logo.png",
-        pagesInfoArr: [
-            {
-                title: "Warehouse Connet",
-                description: "Live Warehouse Status - Online Payment - Logistics",
-                mediaArr: [
-                    {type: "image" , url : "/experience/warehouse/18.png"},
-                    {type: "image" , url : "/experience/warehouse/19.png"},
-                    {type: "image" , url : "/experience/warehouse/20.png"},
-                    {type: "image" , url : "/experience/warehouse/21.png"},
-                    {type: "image" , url : "/experience/warehouse/22.png"},
-                    
-                    
+                    { type: "image", url: "/experience/rakshanetra/a1.jpeg" },
+                    { type: "image", url: "/experience/rakshanetra/a2.jpeg" },
                 ],
             },
-           
         ],
         descriptionDetails: {
             paragraphs: [
-                `
-Warehouse Connect is a transformative web-based platform that addresses inefficiencies in the food supply chain by enabling effective sharing and utilization of vacant warehouse spaces. This platform connects food suppliers, government agencies, and warehouse owners, streamlining storage processes and reducing food wastage. It ensures real-time availability, user-friendly navigation, and robust analytics to improve food distribution efficiency. By integrating modern technologies, Warehouse Connect aligns with sustainability goals and promotes resource optimization.`
-,
-"Key Features:"            
-],
-            bullets: [
-                "User Registration and Profiles: Register and maintain detailed profiles for warehouse owners and organizations, fostering transparency and trust.",
-                "Warehouse Listings: Easily list and explore available storage spaces with comprehensive details, including capacity and amenities.",
-                "Map-Based Search: Locate nearby warehouses using geolocation services and map integration.",
-                "Real-Time Availability: Display and book available warehouse spaces instantly.",
-                "Inventory Management: Efficiently manage stored supplies through intuitive tools.",
-                "Communication Tools: Engage with warehouse owners or users through in-app messaging and notifications.",
-                "Data Analytics and Reports: Gain valuable insights into storage trends and warehouse utilization through advanced data visualization.",
+                "RakshaNetra is an IoT-based system designed to detect, prevent, and respond to critical emergencies such as fires, gas leaks, and road accidents, with ML-powered analysis and real-time alerts.",
             ],
-        },
-    },
-    {
-        id: "vid-craft",
-        companyName: "VidCraft",
-        type: "Personal Project",
-        category: ["Smart Automation in AI/ML"],
-        shortDescription:
-            "Developing an AI/ML-powered solution to transform Press Information Bureau (PIB) press releases into engaging videos in 14 languages, enhancing accessibility and reader engagement.",
-            websiteLink: "https://drive.google.com/drive/folders/1VSzNhJzul2p3rNIfiYBaxJP8G9le9Us1",
-        techStack: [
-            "python",
-            "MongoDB",
-        ],
-        startDate: new Date("2023-09-01"),
-        endDate: new Date("2023-10-01"),
-        companyLogoImg: "/experience/vidcraft/logo.png",
-        pagesInfoArr: [
-            {
-                title: "Working of VidCraft",
-                mediaArr: [{ type: "video", url: "/experience/vidcraft/SIH.mp4" },],
-            },
-           
-        ],
-        descriptionDetails: {
-            paragraphs: [
-                `VidCrafters aims to transform PIB Press Releases into engaging videos using AI/ML technologies. This solution addresses the declining attention span of readers by converting text-based press releases into visually appealing videos in English and 13 Indian regional languages. The process ensures the videos are reviewed and approved by PIB officers before publication and shared on social media for wider reach.`,
-                'Features/Unique Selling Points (USPs):'
-                ],
             bullets: [
-                "Automated Text-to-Video Conversion: Utilizes AI/ML tools to convert press releases into videos.",
-                "Multilingual Support: Generates content in English and 13 regional languages (Hindi, Urdu, Punjabi, etc.)",
-                "Copyright-Free Visuals: Sources relevant, copyright-free images using the Unsplash API.",
-                "Social Media Integration: Enables automatic sharing of videos on PIB’s social media handles.",
-                "User Feedback: Incorporates a rating system for published videos to gauge user engagement and quality.",
-                "Manual Review Process: Ensures quality control through PIB officer approval before video publication.",
-                "Audio Integration: Leverages Google Text-to-Speech for generating voiceovers in multiple languages.",
+                "Real-time detection and alerts",
+                "Predictive maintenance with ML",
+                "Remote monitoring and cloud storage",
             ],
         },
     },
@@ -179,15 +276,9 @@ Warehouse Connect is a transformative web-based platform that addresses ineffici
         type: "Professional",
         category: ["Web Dev", "Full Stack", "UI/UX"],
         shortDescription:
-            "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
+            "Designed and built professional websites using Next.js and React — high performance, scalability, and seamless UX. Builtdesign's Blogs site with Netlify CMS.",
         websiteLink: "https://vinrenterprises.com",
-        techStack: [
-            "Next.js",
-            "React",
-            "Node.js",
-            "MongoDB",
-            "Typescript",
-        ],
+        techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
         startDate: new Date("2023-12-01"),
         endDate: new Date("2024-06-01"),
         companyLogoImg: "/experience/vinrenterprises/logo.png",
@@ -198,36 +289,11 @@ Warehouse Connect is a transformative web-based platform that addresses ineffici
                     { type: "image", url: "/experience/vinrenterprises/vinr_1.png" },
                     { type: "image", url: "/experience/vinrenterprises/vinr_2.png" },
                     { type: "image", url: "/experience/vinrenterprises/vinr_3.png" },
-                    { type: "image", url: "/experience/vinrenterprises/vinr_4.png" },
-                    { type: "image", url: "/experience/vinrenterprises/vinr_5.png" },
-                 
-
-                ],
-            },
-            
-            {
-                title: "Partners",
-                description: "Authorised Dealers",
-                mediaArr: [
-                    { type: "image", url: "/experience/vinrenterprises/vinr_6.png" },
-                ],
-            },
-            {
-                title: "Contact",
-                mediaArr: [
-                    { type: "image", url: "/experience/vinrenterprises/vinr_7.png" },
-                ],
-            },
-            {
-                title: "Career",
-                description: "Authorised Dealers",
-                mediaArr: [
-                    { type: "image", url: "/experience/vinrenterprises/vinr_9.png" },
                 ],
             },
             {
                 title: "Blogs",
-                description: "Automated Service to update daily blogs",
+                description: "Automated service to update daily blogs",
                 mediaArr: [
                     { type: "image", url: "/experience/vinrenterprises/vinr_10.png" },
                 ],
@@ -235,61 +301,15 @@ Warehouse Connect is a transformative web-based platform that addresses ineffici
         ],
         descriptionDetails: {
             paragraphs: [
-                'At VINR Enterprises, I designed, developed, and maintained professional websites using Next.js and Firebase, ensuring high performance, scalability, and a seamless user experience. I created dynamic, responsive user interfaces with React.js and Tailwind CSS, enhancing design aesthetics and functionality. Leveraging Firebase Firestore and Firebase Authentication, I implemented real-time data handling features and secure authentication systems. By utilizing server-side rendering (SSR) and static site generation (SSG) capabilities of Next.js, I optimized page load speeds and significantly improved SEO performance.',
-                'Regular updates and upgrades were implemented to incorporate the latest technologies, keeping the websites aligned with industry trends and business needs. I collaborated closely with cross-functional teams, including designers, content creators, and stakeholders, to gather requirements and deliver solutions that met organizational goals. Rigorous testing, debugging, and routine maintenance were conducted to ensure website stability, security, and an exceptional user experience across all devices. I also automated deployment processes using GitHub Actions and Vercel, streamlining CI/CD pipelines for faster iterations. Additionally, I monitored website analytics and user feedback to identify opportunities for improvement, applying insights to enhance user engagement and satisfaction. This work resulted in a robust online presence that boosted brand visibility and trust for VINR Enterprises.'
-                ],
-            bullets: [
-                ],
-        },
-    },
-    {
-        id: "graphai",
-        companyName: "GraphAI",
-        type: "Personal Project",
-        category: ["AI-ML", "Business Intelligence (BI) Tools"],
-        shortDescription:
-            "Graph_AI is an AI-powered tool that transforms natural language instructions into dynamic data visualizations, providing actionable insights and trend analysis. It combines NLP, predictive analytics, and interactive features for seamless data exploration.",
-        techStack: [
-            "Next.js",
-            "React",
-            "Node.js",
-            "MongoDB",
-            "Typescript",
-        ],
-        startDate: new Date("2024-11-01"),
-        endDate: new Date("2024-11-06"),
-        companyLogoImg: "/experience/graphai/logo.png",
-        pagesInfoArr: [
-            {
-                title: "Landing Page",
-                mediaArr: [
-                    { type: "image", url: "/experience/graphai/logo.png" },
-                    // { type: "image", url: "/experience/vinrenterprises/vinr_2.png" },
-                    // { type: "image", url: "/experience/vinrenterprises/vinr_3.png" },
-                    // { type: "image", url: "/experience/vinrenterprises/vinr_4.png" },
-                    // { type: "image", url: "/experience/vinrenterprises/vinr_5.png" },
-                 
-
-                ],
-            },
-            
-        ],
-        descriptionDetails: {
-            paragraphs: [
-            'Graph_AI is an AI-powered application that enables users to create, customize, and analyze data visualizations with ease. By simply providing natural language instructions or data, users can generate interactive graphs, explore trends, and gain insights into their datasets. Built with advanced language models and powered by Groq, Graph_AI streamlines the process of data analysis and visualization, making it accessible to both technical and non-technical users.'    
+                "At VINR Enterprises, I designed and maintained professional websites using Next.js and React, ensuring high performance, scalability, and a seamless user experience. Automated deployment with GitHub Actions and Vercel.",
             ],
             bullets: [
-                "Natural Language Data Analysis: Users can ask questions like What trends do we see over time? or What is the average sales per month? to receive detailed insights from the dataset.",
-                "Auto-Suggested Visualizations: Based on the data structure, the app suggests the top three graph types best suited to represent the data (e.g., line charts, histograms).",
-                "AI-Driven Annotations: Automatically identifies and marks key points on graphs, such as peaks, troughs, or significant changes, providing contextual insights.",    
-                "Forecasting and Prediction: Generates data simulations and forecasts future trends using historical data, overlaying predictions on graphs for comparison.",
-                "Enables real-time data exploration with filters for dynamic updates to visualizations, such as date ranges or category selections.",
-                "Users can modify chart styles (colors, markers, etc.) using voice commands like Change the line to red or Add gridlines.",
+                "Next.js, React, Tailwind CSS",
+                "Firebase Auth and Firestore",
+                "CI/CD with GitHub Actions and Vercel",
             ],
         },
     },
-
-
 ];
 
 export const featuredExperiences = Experiences.slice(0, 3);

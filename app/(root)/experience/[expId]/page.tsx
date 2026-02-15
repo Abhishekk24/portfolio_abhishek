@@ -7,7 +7,6 @@ import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn, formatDateFromObj } from "@/lib/utils";
 import { Experiences } from "@/config/experience";
-import abhiImg from "@/public/Abhi.png";
 import ChipContainer from "@/components/chip-container";
 import ExperienceDescription from "@/components/exp-desc";
 import CustomTooltip from "@/components/custom-tooltip";
@@ -71,11 +70,11 @@ export default function Experience({ params }: ExperiencePageProps) {
                         className="flex items-center space-x-2 text-sm"
                     >
                         <Image
-                            src={abhiImg}
-                            alt={"Abhishek"}
+                            src="/profile.jpeg"
+                            alt="Abhishek Jadhav"
                             width={42}
                             height={42}
-                            className="rounded-full bg-white"
+                            className="rounded-full bg-white object-cover"
                         />
 
                         <div className="flex-1 text-left leading-tight">
@@ -88,14 +87,16 @@ export default function Experience({ params }: ExperiencePageProps) {
                 </div>
             </div>
 
-            <Image
-                src={exp.companyLogoImg}
-                alt={exp.companyName}
-                width={720}
-                height={405}
-                className="my-8 rounded-md border bg-muted transition-colors"
-                priority
-            />
+            <div className="relative my-8 w-full max-w-sm aspect-square mx-auto rounded-md border bg-muted overflow-hidden">
+                <Image
+                    src={exp.companyLogoImg}
+                    alt={exp.companyName}
+                    fill
+                    className="object-contain p-2"
+                    priority
+                    sizes="(max-width: 384px) 100vw, 384px"
+                />
+            </div>
 
             <div className="mb-7 ">
                 <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
